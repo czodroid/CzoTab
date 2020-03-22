@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<!--
+Filename: index.html
+Author: Olivier Sirol <czo@free.fr>
+License: GPL-2.0
+File Created: mai 2016
+Last Modified: lundi 16 mars 2020, 03:06
+Edit Time: 15:03:23
+$Id:$
+-->
+
+<html lang="fr">
+
+<head>
+
+    <title>czo.wf</title>
+
+    <base href="https://czo.wf/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000">
+
+    <link rel="shortcut icon" href="/czo.png">
+    <link rel="apple-touch-icon" href="/czo.png">
+    <link rel="icon" href="/czo.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/sbg/grayscale.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="glyphicon glyphicon-menu-hamburger"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="glyphicon glyphicon-chevron-right"></i>  <span class="light"></span> czo.wf
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#intranet">Intranet</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="CzoWidgets">
+                            <div class="CzoTime">
+                                <div class="CzoTime">
+                                    <h1>
+                                        <span id="czotime"></span>
+                                    </h1>
+                                    <hr>
+                                    <h3>
+                                        <span id="czodate"></span>
+                                    </h3>
+                                </div>
+                                <a href="http://czo.free.fr/?dark" class="btn btn-circle">
+                                    <i class="glyphicon glyphicon-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About czo.wf</h2>
+                <p><a class="page-scroll" href="#intranet">Intranet</a> - <a class="page-scroll"
+                        href="#download">Download</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intranet Section -->
+    <section id="intranet" class="content-section text-center">
+        <div class="intranet-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Intranet (Restricted area)</h2>
+                    <p>Manuals, documents and logs. This is a restricted area and you will need a login and password to
+                        access.</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="/intranet/" class="btn btn-default btn-lg">Intranet</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Visit Download Page</h2>
+                    <p>Here, you can download softwares and other data.</p>
+                    <a href="/intranet/download/" class="btn btn-default btn-lg">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>Feel free to email us to provide some feedback</p>
+                <p><a href="mailto:webmaster@czo.wf">webmaster@czo.wf</a>
+                </p>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; czo 2015-2020</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/sbg/grayscale.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var now = new Date();
+            var day = Math.floor(now.getTime() / 1000 / 60 / 60 / 24);
+            /* console.log(day); */
+            var imgName = (day % 98) + 1;
+            $(".intro").css("background-image", "url(/sbg/wal/" + imgName + ".jpg)");
+            olddisptime = '';
+
+            function updateClock() {
+                var dow_fr = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
+                var month_fr = new Array("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre");
+
+                /* if (!document.getElementById) return; */
+
+                now = new Date();
+                hours = now.getHours();
+                mins = now.getMinutes();
+                secs = now.getSeconds();
+                day = dow_fr[now.getDay()] + " " + now.getDate() + " " + month_fr[now.getMonth()];
+
+                if (hours < 10) hours = "0" + hours;
+                if (mins < 10) mins = "0" + mins;
+                if (secs < 10) secs = "0" + secs;
+                disptime = hours + ":" + mins;
+                // console.log(disptime);
+
+                if (disptime != olddisptime) {
+                    $('#czotime').text(disptime);
+                    $('#czodate').text(day);
+                    olddisptime = disptime;
+                }
+
+                // call this function again in 1000ms
+                setTimeout(updateClock, 1000);
+            }
+            updateClock();
+
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-1952014-8', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
