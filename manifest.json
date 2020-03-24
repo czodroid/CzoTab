@@ -6,14 +6,13 @@
   "description": "New Tab page from https://czo.wf",
 
   "icons": {
-    "32": "icons/32.png",
-    "48": "icons/48.png",
-    "96": "icons/96.png",
-    "128": "icons/128.png"
+    "32": "src/icons/32.png",
+    "48": "src/icons/48.png",
+    "96": "src/icons/96.png",
+    "128": "src/icons/128.png"
   },
 
   "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
-  "content_security_policy": "script-src 'self' https://www.google.com https://www.google-analytics.com https://api.bing.com https://czo.wf https://maxcdn.bootstrapcdn.com https://cdnjs.cloudflare.com 'sha256-1kMorIv9bFeJDGfHFaj9vDWQgGKuxMA4mzUyuCvQIQM=' 'sha256-NEjjTtqDrWbLRu9WwyZcDEglYTKr1p4MxfMvECZsTdc='; object-src 'self'"
+    "newtab": "src/index.html"
+  }
 }
