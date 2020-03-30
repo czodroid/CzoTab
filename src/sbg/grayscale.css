@@ -5,17 +5,22 @@
  * 2015/03/06 : Modified by Olivier Sirol <czo@free.fr>  
  */
 
+html {
+    scrollbar-width: none;
+    width: 100%;
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     width: 100%;
     height: 100%;
     font-family: Lora, serif;
     color: #fff;
     background-color: #000;
-}
-
-html {
-    width: 100%;
-    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
