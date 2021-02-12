@@ -5,8 +5,8 @@ Filename: index.html
 Author: Olivier Sirol <czo@free.fr>
 License: GPL-2.0
 File Created: mai 2016
-Last Modified: vendredi 28 août 2020, 02:51
-Edit Time: 15:26:04
+Last Modified: Friday 12 February 2021, 00:43
+Edit Time: 16:51:23
 $Id:$
 -->
 
@@ -18,166 +18,156 @@ $Id:$
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000">
+    <meta name="Author" content="Olivier Sirol, czo@free.fr">
+    <meta name="theme-color" content="#181818">
 
     <link rel="shortcut icon" href="icons/128.png">
     <link rel="apple-touch-icon" href="icons/128.png">
     <link rel="icon" href="icons/128.png">
 
-    <!-- Bootstrap CSS -->
-    <!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
-    <link href="sbg/cdn/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="sbg/grayscale.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <link href="sbg/cdn/normalize/8.0.0/normalize.css" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(sbg/font/Quicksand.woff2) format('woff2');
+        }
+
+        body,
+        html {
+            font-family: Quicksand, system-ui, sans-serif;
+            line-height: 1.25;
+            color: #fff;
+            background-color: #282828;
+            font-size: 12pt;
+            /* font-size: 1vw; */
+            /* font-size: 1vmax; */
+            /* font-size: 1.9vmin; */
+
+        }
+
+        .intro {
+            /* background-image: url("sbg/wal/1.jpg"); */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .CzoFullscreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .CzoWidgets {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .CzoTime {
+            text-shadow: 0 0 0.5rem rgba(0, 0, 0, .5);
+        }
+
+        .CzoTime a {
+            font-size: 2em;
+        }
+
+        .CzoTime h1,
+        .CzoTime h3 {
+            font-size: 6em;
+            font-weight: 300;
+            line-height: 1;
+            margin: 0;
+            transition: font-size .5s ease;
+        }
+
+        .CzoTime h3 {
+            font-size: 1.8em;
+        }
+
+        @media(min-width:768px) {
+            .CzoTime h1 {
+                font-size: 9em;
+            }
+
+            .CzoTime h3 {
+                font-size: 2.7em;
+            }
+        }
+
+        .CzoTime hr {
+            border: 0;
+            margin: 1rem 0;
+        }
+
+        .credit {
+            position: absolute;
+            bottom: 0rem;
+            left: 1rem;
+            right: 1rem;
+            font-size: .6em;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            text-decoration: none;
+            font-weight: normal;
+            color: #fff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ::selection {
+            text-shadow: none;
+            background: #fcfcfc;
+            background: rgba(255, 255, 255, .2);
+        }
+    </style>
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="glyphicon glyphicon-menu-hamburger"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="glyphicon glyphicon-chevron-right"></i>  <span class="light"></span> czo.wf
-                </a>
-            </div>
+    <div class="intro"></div>
+    <div class="CzoWidgets CzoFullscreen">
+        <!-- <div class="CzoWidgets"> -->
+        <div class="CzoTime">
+            <h1 id="czotime"></h1>
+            <hr style="border-top: .13em solid #fff;">
+            <h3 id="czodate"></h3>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#intranet">Intranet</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <a href="http://czo.free.fr" rel="noopener noreferrer" title="czo.free.fr"><i><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="margin-top: 1em;">
+                        <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg></i></a>
+
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="CzoWidgets">
-                            <div class="CzoTime">
-                                <div class="CzoTime">
-                                    <h1>
-                                        <span id="czotime"></span>
-                                    </h1>
-                                    <hr>
-                                    <h3>
-                                        <span id="czodate"></span>
-                                    </h3>
-                                </div>
-                                <a href="http://czo.free.fr/?dark" class="btn btn-circle">
-                                    <i class="glyphicon glyphicon-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="credit">
+        <p>Photos from <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About czo.wf</h2>
-                <p><a class="page-scroll" href="#intranet">Intranet</a> - <a class="page-scroll"
-                        href="#download">Download</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Intranet Section -->
-    <section id="intranet" class="content-section text-center">
-        <div class="intranet-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Intranet (Restricted area)</h2>
-                    <p>Manuals, documents and logs. This is a restricted area and you will need a login and password to access.</p>
-                    <a href="https://czo.wf/intranet/" class="btn btn-default btn-lg">Intranet</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Visit Download Page</h2>
-                    <p>Here, you can download softwares and other data.</p>
-                    <a href="https://czo.wf/intranet/download/" class="btn btn-default btn-lg">Download</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <br>
-    <br>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
-                <p>Feel free to email us to provide some feedback</p>
-                <p><a href="mailto:webmaster@czo.wf">webmaster@czo.wf</a>
-                </p>
-
-                <br>
-                <br>
-                <br>
-                <br>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p><a href="https://czo.wf">Real site</a> - <a href="https://unsplash.com">Unsplash photos</a></p>
-            <p>Copyright &copy; czo 2015-2020</p>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <!-- //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js -->
     <script src="sbg/cdn/jquery/3.4.1/jquery.min.js"></script>
-    <script src="sbg/cdn/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Bootstrap -->
-    <!-- //maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
-    <script src="sbg/cdn/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="sbg/grayscale.js"></script>
     <script src="sbg/czoclock.js"></script>
 
 </body>

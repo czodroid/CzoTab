@@ -3,28 +3,41 @@
  * Author: Olivier Sirol <czo@free.fr>
  * License: GPL-2.0
  * File Created: January 2019
- * Last Modified: mardi 24 mars 2020, 02:00
- * Edit Time: 0:21:05
+ * Last Modified: Friday 12 February 2021, 01:04
+ * Edit Time: 0:27:59
  * Description:
  * 
  * $Id: $
 */
 
 $(document).ready(function () {
-    var now = new Date();
-    var day = Math.floor(now.getTime() / 1000 / 60 / 60 / 24);
-    /* console.log(day); */
-    var imgName = (day % 98) + 1;
-    $(".intro").css("background-image", "url(sbg/wal/" + imgName + ".jpg)");
-    olddisptime = '';
+    var olddisptime = '';
+    var oldimgName = 0;
+
+    function debugc(str) {
+        if (0)
+            console.log(str);
+    }
 
     function updateClock() {
         var dow_fr = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
         var month_fr = new Array("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre");
 
-        /* if (!document.getElementById) return; */
+        var now = new Date();
+        var imgday = Math.floor(now.getTime() / 1000 / 60 / 60 / 24);
 
-        now = new Date();
+        imgName = (imgday % 98) + 1;
+
+        debugc(now.getTime());
+        debugc(imgday);
+        debugc(imgName);
+
+        if ((imgName != oldimgName)) {
+            $(".intro").css("background-image", "url(sbg/wal/" + imgName + ".jpg)");
+            $(".intro").css("background-image", "url(sbg/wal/1.jpg)");
+            oldimgName = imgName;
+        }
+
         hours = now.getHours();
         mins = now.getMinutes();
         secs = now.getSeconds();
@@ -34,7 +47,7 @@ $(document).ready(function () {
         if (mins < 10) mins = "0" + mins;
         if (secs < 10) secs = "0" + secs;
         disptime = hours + ":" + mins;
-        // console.log(disptime);
+        debugc(disptime);
 
         if (disptime != olddisptime) {
             $('#czotime').text(disptime);

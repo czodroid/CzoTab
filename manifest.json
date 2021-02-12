@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "CzoTab",
-  "version": "1.7",
+  "version": "1.8",
 
-  "description": "New Tab page from https://czo.wf",
+  "description": "New Tab page",
 
   "icons": {
     "32": "src/icons/32.png",
