@@ -3,8 +3,8 @@
  * Author: Olivier Sirol <czo@free.fr>
  * License: GPL-2.0
  * File Created: January 2019
- * Last Modified: Friday 12 February 2021, 01:04
- * Edit Time: 0:27:59
+ * Last Modified: vendredi 12 février 2021, 17:54
+ * Edit Time: 0:28:05
  * Description:
  * 
  * $Id: $
@@ -34,7 +34,6 @@ $(document).ready(function () {
 
         if ((imgName != oldimgName)) {
             $(".intro").css("background-image", "url(sbg/wal/" + imgName + ".jpg)");
-            $(".intro").css("background-image", "url(sbg/wal/1.jpg)");
             oldimgName = imgName;
         }
 
