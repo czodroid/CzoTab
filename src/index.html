@@ -5,7 +5,7 @@ Filename: index.html
 Author: Olivier Sirol <czo@free.fr>
 License: GPL-2.0
 File Created: mai 2016
-Last Modified: Friday 12 February 2021, 00:43
+Last Modified: Sunday 25 April 2021, 11:33
 Edit Time: 16:51:23
 $Id:$
 -->
@@ -73,7 +73,7 @@ $Id:$
         }
 
         .CzoTime {
-            text-shadow: 0 0 0.5rem rgba(0, 0, 0, .5);
+            filter: drop-shadow(0 0 2px rgb(0, 0, 0, .9));
         }
 
         .CzoTime a {
@@ -104,7 +104,7 @@ $Id:$
         }
 
         .CzoTime hr {
-            border: 0;
+            border-top: .1em solid #fff;
             margin: 1rem 0;
         }
 
@@ -114,6 +114,7 @@ $Id:$
             left: 1rem;
             right: 1rem;
             font-size: .6em;
+            text-shadow: 0 0 2px black;
         }
 
         a,
@@ -149,7 +150,7 @@ $Id:$
         <!-- <div class="CzoWidgets"> -->
         <div class="CzoTime">
             <h1 id="czotime"></h1>
-            <hr style="border-top: .13em solid #fff;">
+            <hr>
             <h3 id="czodate"></h3>
 
             <a href="http://czo.free.fr" rel="noopener noreferrer" title="czo.free.fr"><i><svg
