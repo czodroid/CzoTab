@@ -1,14 +1,15 @@
 /*
  * Filename: czoclock.js
  * Author: Olivier Sirol <czo@free.fr>
- * License: GPL-2.0
- * File Created: January 2019
- * Last Modified: vendredi 12 février 2021, 17:54
- * Edit Time: 0:28:05
+ * License: GPL-2.0 (http://www.gnu.org/copyleft)
+ * File Created: mai 2016
+ * Last Modified: Saturday 13 July 2024, 17:06
+ * Edit Time: 0:30:05
  * Description:
- * 
- * $Id: $
-*/
+ *                 get the clock!
+ *
+ * Copyright: (C) 2016-2024 Olivier Sirol <czo@free.fr>
+ */
 
 $(document).ready(function () {
     var olddisptime = '';

@@ -1,9 +1,9 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "CzoTab",
-  "version": "1.9",
+  "version": "2.0",
 
-  "description": "New Tab page",
+  "description": "Czo New Tab page",
 
   "icons": {
     "32": "src/icons/32.png",
